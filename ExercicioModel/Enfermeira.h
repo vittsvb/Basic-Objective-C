@@ -18,4 +18,5 @@
 -(void)vacinar:(NSString *)data :(NSString *)paciente;
 -(NSString *)medirFebre:(NSString *)paciente :(float)tmp;
 
+-(Enfermeira *)initWithNome:(NSString *)_nome eCoren:(int)_coren ePlantao:(bool)_plantao eSalario:(float)_salario;
 @end

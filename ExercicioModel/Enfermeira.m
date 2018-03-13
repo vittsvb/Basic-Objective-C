@@ -24,4 +24,15 @@
     NSString *txt = [NSString stringWithFormat:@"O paciente %@ é esta com febre? %@", paciente, result?@"SIM":@"NÃO"];
     return txt;
 }
+
+-(Enfermeira *)initWithNome:(NSString *)_nome eCoren:(int)_coren ePlantao:(bool)_plantao eSalario:(float)_salario{
+    self = [super init];
+    if(self){
+        self.nome = _nome;
+        self.coren = _coren;
+        self.plantao = _plantao;
+        self.salario = _salario;
+    }
+    return self;
+}
 @end
